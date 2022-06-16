@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 /**
  * processor - process the whole monty file
  * @filename: str name of monty opcode file
