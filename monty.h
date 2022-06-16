@@ -72,9 +72,8 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number);
 /* pushPall.c */
 void p_ush(stack_t **stack, unsigned int line_number);
 void p_all(stack_t **stack, unsigned int line_number);
-
-void p_op(stack_t **stack, unsigned int line_number);
 void p_int(stack_t **stack, unsigned int line_number);
+void p_op(stack_t **stack, unsigned int line_number);
 void s_wap(stack_t **stack, unsigned int line_number);
 
 
