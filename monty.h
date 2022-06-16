@@ -56,7 +56,7 @@ typedef struct glob_s
 	stack_t **top;
 	instruction_t **ops;
 } glob_t;
-
+ssize_t getline (char **string, size_t *n, FILE *stream);
 extern glob_t glob;
 
 void stack_init(stack_t **head);
