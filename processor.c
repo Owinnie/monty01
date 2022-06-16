@@ -8,10 +8,10 @@
  **/
 int processor(char *filename, stack_t **stack)
 {
-	size_t *len = 0;
+	size_t len = 0;
 	unsigned int line_number = 0;
-	char **line = NULL;
-	FILE *fp;
+	char *line = NULL;
+	FILE *fp = NULL;
 	char *op;
 
 
