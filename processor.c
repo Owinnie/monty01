@@ -9,7 +9,6 @@
 int processor(char *filename, stack_t **stack)
 {
 	size_t len;
-	ssize_t read;
 	unsigned int line_number = 0;
 	char *line = NULL;
 	FILE *fp;
@@ -28,7 +27,7 @@ int processor(char *filename, stack_t **stack)
 		exit(EXIT_FAILURE);
 	}
 	atexit(free_all);
-	while ((read = getline(&line, &len, fp)) != -1)
+	while (getline(&line, &len, fp) != -1)
 	{
 		op = strtok(line, DELIMS);
 		line_number++;
