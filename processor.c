@@ -10,7 +10,7 @@ int processor(char *filename, stack_t **stack)
 {
 	size_t len;
 	unsigned int line_number = 0;
-	char *line = NULL;
+	char **line = NULL;
 	FILE *fp;
 	char *op;
 
