@@ -1,12 +1,11 @@
 #include "monty.h"
 
 /**
- * instruction_push - pushes an element to the stack
+ * p_ush - pushes an element to the stack
  * @stack: double pointer to the first node
  * @line_number: value of new node
- * Return: nothing
  */
-void instruction_push(stack_t **stack, unsigned int line_number)
+void p_ush(stack_t **stack, unsigned int line_number)
 {
 	stack_t *element = malloc(sizeof(stack_t));
 	char *op;
@@ -23,7 +22,7 @@ void instruction_push(stack_t **stack, unsigned int line_number)
 		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	num = atoi(arg);
+	num = atoi(op);
 	element->n = num;
 	element->prev = NULL;
 	element->next = *stack;
@@ -33,12 +32,11 @@ void instruction_push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * instruction_pall - prints all values on the stack, starting from top
+ * p_all - prints all values on the stack, starting from top
  * @stack: double pointer to the first node
  * @line_number: value of new node
- * Return: nothing
  */
-void instruction_pall(stack_t **stack, unsigned int line_number)
+void p_all(stack_t **stack, unsigned int line_number)
 {
 	stack_t *element = *stack;
 
