@@ -21,11 +21,6 @@ void eval_op(stack_t **stack, char *op, unsigned int line_number)
 		{"sub", s_ub},
 		{"div", d_iv},
 		{"mul", m_ul},
-		{"mod", instruction_mod},
-		{"pchar", instruction_pchar},
-		{"pstr", instruction_pstr},
-		{"rotl", instruction_rotl},
-		{"rotr", instruction_rotr},
 		{NULL, NULL}
 	};
 
