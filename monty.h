@@ -59,17 +59,12 @@ typedef struct glob_s
 
 extern glob_t glob;
 
-/* monty.c */
 void stack_init(stack_t **head);
 void free_all(void);
+int processor(char *filename, stack_t **stack);
 
-/* helper1.c */
-int process_file(char *filename, stack_t **stack);
+void eval_op(stack_t **stack, char *op, unsigned int line_number);
 
-/* helper2.c */
-void delegate_op(stack_t **stack, char *op, unsigned int line_number);
-
-/* pushPall.c */
 void p_ush(stack_t **stack, unsigned int line_number);
 void p_all(stack_t **stack, unsigned int line_number);
 void p_int(stack_t **stack, unsigned int line_number);
