@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * p_op - removes the top element of stack
+ * p_op - removes top element of stack
  * @stack: double pointer to the first node
  * @line_number: value of new node
  * Return: nothing
  */
-void instruction_pop(stack_t **stack, unsigned int line_number)
+void p_op(stack_t **stack, unsigned int line_number)
 {
 	stack_t *node;
 
